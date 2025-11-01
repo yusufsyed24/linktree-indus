@@ -1,202 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indus Real Estate LLC</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <!-- Logo Section -->
-      <div class="logo-section">
-        <div class="logo-circle">
-          <img
-            src="images/indus-real-estate.jpeg"
-            alt="Indus Real Estate LLC"
-            class="company-logo"
-          />
-        </div>
-        <div class="company-name">Indus Real Estate LLC</div>
-        <div class="company-handle">@indusrealestate</div>
-      </div>
 
-      <!-- Content Section -->
-      <div class="content-section">
-        <div class="text-content">
-          <p>
-            Indus Real Estate LLC celebrating over two decades of excellence,
-            Indus Real Estate LLC stands as a trusted name in Dubai’s dynamic
-            property market. With a legacy spanning 20 years and over 160
-            prestigious awards, we continue to redefine standards in real estate
-            consultancy, brokerage, and investment services.
-          </p>
-          <br>
-          <p>
-            Driven by integrity, innovation, and an unwavering commitment to
-            client success, we offer tailored solutions that transform
-            aspirations into reality. From luxury residences to lucrative
-            investments, our expertise ensures every client experiences seamless
-            service and exceptional results.
-          </p>
-          <br>
-          <p>
-            Indus Real Estate LLC — where excellence meets experience, and every
-            success story begins with trust.
-          </p>
-        </div>
-        <div class="social-links">
-          <a
-            href="https://indusre.com"
-            class="social-link website"
-            target="_blank"
-          >
-            <i class="fas fa-globe"></i>
-            <span class="social-text">Website</span>
-          </a>
-          <a
-            href="https://www.instagram.com/indusredubai/?hl=en"
-            class="social-link instagram"
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i>
-            <span class="social-text">Instagram</span>
-          </a>
-          <a
-            href="https://www.facebook.com/p/Indus-Real-Estate-LLC-100083310042155/"
-            class="social-link facebook"
-            target="_blank"
-          >
-            <i class="fab fa-facebook"></i>
-            <span class="social-text">Facebook</span>
-          </a>
-          <a
-            href="https://www.youtube.com/c/IndusRealEstateLLC"
-            class="social-link youtube"
-            target="_blank"
-          >
-            <i class="fab fa-youtube"></i>
-            <span class="social-text">YouTube</span>
-          </a>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indus Real Estate LLC</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
 
-      <!-- Contact Section -->
-      <div class="contact-section">
-        <div class="contact-button call-now" onclick="callCompany()">
-          <div class="contact-icon">
-            <i class="fas fa-phone"></i>
-          </div>
-          <div class="contact-info">
-            <div class="contact-title">Call Now</div>
-          </div>
-        </div>
-        <div class="contact-button whatsapp-now" onclick="whatsappCompany()">
-          <div class="contact-icon">
-            <i class="fab fa-whatsapp"></i>
-          </div>
-          <div class="contact-info">
-            <div class="contact-title">WhatsApp Now</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Video Section -->
-      <div class="video-section">
-        <div
-          class="video-thumbnail"
-          onclick="openVideo('https://www.youtube.com/embed/UBMeUsiiFOo')"
-        >
-          <img
-            src="https://img.youtube.com/vi/UBMeUsiiFOo/maxresdefault.jpg"
-            alt="Dubai Property Investment Tips"
-            onerror="this.src='images/video1-thumbnail.jpg'"
-          />
-          <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
-        </div>
-        <div
-          class="video-thumbnail"
-          onclick="openVideo('https://www.youtube.com/embed/bZgBYeabukA')"
-        >
-          <img
-            src="https://img.youtube.com/vi/bZgBYeabukA/maxresdefault.jpg"
-            alt="Top Areas to Rent in Dubai"
-            onerror="this.src='images/video2-thumbnail.jpg'"
-          />
-          <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
-        </div>
-
-        <div
-          class="video-thumbnail"
-          onclick="openVideo('https://www.youtube.com/embed/MHuNvJv43I4')"
-        >
-          <img
-            src="https://img.youtube.com/vi/MHuNvJv43I4/maxresdefault.jpg"
-            alt="Top Areas to Rent in Dubai"
-            onerror="this.src='images/video2-thumbnail.jpg'"
-          />
-          <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
-        </div>
-        <div
-          class="video-thumbnail"
-          onclick="openVideo('https://www.youtube.com/embed/ZCOHjZ-ODIw')"
-        >
-          <img
-            src="https://img.youtube.com/vi/ZCOHjZ-ODIw/maxresdefault.jpg"
-            alt="Top Areas to Rent in Dubai"
-            onerror="this.src='images/video2-thumbnail.jpg'"
-          />
-          <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
-        </div>
-      </div>
-
+<body>
   <div class="container">
-        <h1 class="section-title">Our <span>LinkedIn</span></h1>
-        
-        <div class="hiring-container">
-            <!-- Hiring Section - LinkedIn Post 1 -->
-            <div class="hiring-section" onclick="openLinkedInPost()">
-                <div class="linkedin-container">
-                    <img
-                        src="images/Anniversary 500x300.jpg"
-                        alt="We're Hiring - Indus Real Estate"
-                        class="linkedin-post"
-                    />
-                    <div class="linkedin-logo">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </div>
-                <div class="hiring-overlay">
-                    <div class="hiring-subtitle">Click to view our LinkedIn post</div>
-                </div>
-            </div>
-
-            <!-- Hiring Section - LinkedIn Post 2 -->
-            <div class="hiring-section" onclick="openLinkedInPost2()">
-                <div class="linkedin-container">
-                    <img
-                        src="images/Diwali 500x300.jpg"
-                        alt="We're Hiring - Indus Real Estate"
-                        class="linkedin-post"
-                    />
-                    <div class="linkedin-logo">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                </div>
-                <div class="hiring-overlay">
-                    <div class="hiring-subtitle">Click to view our LinkedIn post</div>
-                </div>
-            </div>
-        </div>
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <div class="logo-circle">
+        <img src="images/indus-real-estate.jpeg" alt="Indus Real Estate LLC" class="company-logo" />
+      </div>
+      <div class="company-name">Indus Real Estate LLC</div>
+      <div class="company-handle">@indusrealestate</div>
     </div>
-      
 
-      <!-- Additional Text Section -->
-      <!-- <div class="text-content">
+    <!-- Content Section -->
+    <div class="content-section">
+      <div class="text-content">
+        <p>
+          Indus Real Estate LLC celebrating over two decades of excellence,
+          Indus Real Estate LLC stands as a trusted name in Dubai’s dynamic
+          property market. With a legacy spanning 20 years and over 160
+          prestigious awards, we continue to redefine standards in real estate
+          consultancy, brokerage, and investment services.
+        </p>
+        <br>
+        <p>
+          Driven by integrity, innovation, and an unwavering commitment to
+          client success, we offer tailored solutions that transform
+          aspirations into reality. From luxury residences to lucrative
+          investments, our expertise ensures every client experiences seamless
+          service and exceptional results.
+        </p>
+        <br>
+        <p>
+          Indus Real Estate LLC — where excellence meets experience, and every
+          success story begins with trust.
+        </p>
+      </div>
+      <div class="social-links">
+        <a href="https://indusre.com" class="social-link website" target="_blank">
+          <i class="fas fa-globe"></i>
+          <span class="social-text">Website</span>
+        </a>
+        <a href="https://www.instagram.com/indusredubai/?hl=en" class="social-link instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <span class="social-text">Instagram</span>
+        </a>
+        <a href="https://www.facebook.com/p/Indus-Real-Estate-LLC-100083310042155/" class="social-link facebook"
+          target="_blank">
+          <i class="fab fa-facebook"></i>
+          <span class="social-text">Facebook</span>
+        </a>
+        <a href="https://www.youtube.com/c/IndusRealEstateLLC" class="social-link youtube" target="_blank">
+          <i class="fab fa-youtube"></i>
+          <span class="social-text">YouTube</span>
+        </a>
+         <a href="https://www.youtube.com/c/IndusRealEstateLLC" class="social-link linkedin" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span class="social-text">Linked in</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section">
+      <div class="contact-button call-now" onclick="callCompany()">
+        <div class="contact-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <div class="contact-info">
+          <div class="contact-title">Call Now</div>
+        </div>
+      </div>
+      <div class="contact-button whatsapp-now" onclick="whatsappCompany()">
+        <div class="contact-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <div class="contact-info">
+          <div class="contact-title">WhatsApp Now</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-section">
+      <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/embed/UBMeUsiiFOo')">
+        <img src="https://img.youtube.com/vi/UBMeUsiiFOo/maxresdefault.jpg" alt="Dubai Property Investment Tips"
+          onerror="this.src='images/video1-thumbnail.jpg'" />
+        <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
+      </div>
+      <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/embed/bZgBYeabukA')">
+        <img src="https://img.youtube.com/vi/bZgBYeabukA/maxresdefault.jpg" alt="Top Areas to Rent in Dubai"
+          onerror="this.src='images/video2-thumbnail.jpg'" />
+        <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
+      </div>
+
+      <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/embed/MHuNvJv43I4')">
+        <img src="https://img.youtube.com/vi/MHuNvJv43I4/maxresdefault.jpg" alt="Top Areas to Rent in Dubai"
+          onerror="this.src='images/video2-thumbnail.jpg'" />
+        <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
+      </div>
+      <div class="video-thumbnail" onclick="openVideo('https://www.youtube.com/embed/ZCOHjZ-ODIw')">
+        <img src="https://img.youtube.com/vi/ZCOHjZ-ODIw/maxresdefault.jpg" alt="Top Areas to Rent in Dubai"
+          onerror="this.src='images/video2-thumbnail.jpg'" />
+        <div class="video-play-icon"><i class="fas fa-play-circle"></i></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="section-title">Our <span>LinkedIn</span></h1>
+
+      <div class="hiring-container">
+        <!-- Hiring Section - LinkedIn Post 1 -->
+        <div class="hiring-section" onclick="openLinkedInPost()">
+          <div class="linkedin-container">
+            <img src="images/Anniversary 500x300.jpg" alt="We're Hiring - Indus Real Estate" class="linkedin-post" />
+            <div class="linkedin-logo">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="hiring-overlay">
+            <div class="hiring-subtitle">Click to view our LinkedIn post</div>
+          </div>
+        </div>
+
+        <!-- Hiring Section - LinkedIn Post 2 -->
+        <div class="hiring-section" onclick="openLinkedInPost2()">
+          <div class="linkedin-container">
+            <img src="images/Diwali 500x300.jpg" alt="We're Hiring - Indus Real Estate" class="linkedin-post" />
+            <div class="linkedin-logo">
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="hiring-overlay">
+            <div class="hiring-subtitle">Click to view our LinkedIn post</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Additional Text Section -->
+    <!-- <div class="text-content">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -210,28 +162,23 @@
           laborum.
         </p>
       </div> -->
-    </div>
+  </div>
 
-    <!-- Video Modal -->
-    <div id="videoModal" class="video-modal">
-      <div class="modal-content">
-        <span class="close-modal" onclick="closeVideo()">&times;</span>
-        <iframe
-          id="videoFrame"
-          width="100%"
-          height="450"
-          src=""
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeVideo()">&times;</span>
+      <iframe id="videoFrame" width="100%" height="450" src="" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
-    <div class="copyright-section">
-      <div class="copyright-text">
-        &copy; 2025 Indus Real Estate LLC. All rights reserved.
-      </div>
+  </div>
+  <div class="copyright-section">
+    <div class="copyright-text">
+      &copy; 2025 Indus Real Estate LLC. All rights reserved.
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
